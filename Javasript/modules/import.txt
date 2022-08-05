@@ -1,0 +1,65 @@
+******************Importing default***********************************
+
+____mobile.js______                         ______app.js______
+
+export class Nokia{                         import Nokia from './mobile.js
+    properties                               
+    Methods                                  
+}  
+
+
+
+
+********************Named Import**************************************
+
+you can have multiple named import per module. During the import, it is mandatory to 
+use the same name of corresponding object
+
+____mobile.js______                         ______app.js______
+
+export class Nokia{                         import {Nokia, show} from './mobile.js
+    properties                               
+    Methods                                  
+}  
+
+export function show(){
+
+}
+
+**************************Importing all*************************************
+
+export class Nokia{                         import * as device from './mobile.js
+    properties                               
+    Methods                                 // for accessing
+}  
+                                               device.Nokia
+export function show(){
+
+}
+
+****************Importing Default and Named************************************
+
+export default class Nokia{                         import Nokia, { show, display } from './mobile.js
+    properties                               
+    Methods                             
+}  
+                                          
+export function show(){
+
+}
+
+export function display(){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

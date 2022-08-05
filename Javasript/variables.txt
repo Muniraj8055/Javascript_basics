@@ -1,0 +1,33 @@
+var - Global scoped or function scoped. The scope of the var keyword is the global or function scope.
+
+let - block scoped: The scope of a let variable is only block scoped. It can’t be accessible outside the 
+particular block ({block}) 
+
+const - this declaration creates a constant whose scope can be either global or local to the block in which it is
+ declared
+
+variable hoisting
+
+Hoisting is Javascript default behaviour of moving declaration to the top of the function, if defined in a function or
+the top of the global context if outside the function
+
+var a; -> variable declaration
+a = 10 -> variable initialization
+
+we write like this                        compile phase
+
+ var a = 10                                var a;
+ document.write(a)                         var b;
+ var b = 20                                a = 10;
+                                           document.write(a);
+                                           b = 20
+
+a variable can be used before it has been declared
+
+we write like this                        compile phase
+
+ a = 10                                    var a;
+ document.write(a)                         a = 10;
+ var a                                     document.write(a);
+                                           
+                                          

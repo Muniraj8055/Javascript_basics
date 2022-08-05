@@ -1,0 +1,87 @@
+there are two different type of export -named and default
+you can havemultiple named exports per module but onlyone default export
+
+__________________________default export________________________________
+
+for class
+
+export default class Nokia{    or         class Nokia {
+                                                 properties
+    properties                                   Methods
+    Methods                               }
+}                                         export default Nokia
+
+for function
+
+export default function show () {    or         function Nokia() {  
+
+                                                 }
+}                                               export default show
+
+for variable 
+
+const a = 10
+export default a
+
+________________________Named export________________________________
+you can have multiple named export per module. During the import, it is mandatory to 
+use the same name of corresponding object
+
+
+export class Nokia{    or         class Nokia {
+                                                 properties
+    properties                                   Methods
+    Methods                        }
+}                                 export {Nokia}  -> u need to use curly brackets for named function
+
+
+
+export function show () {    or         function Nokia() {  
+
+                                                 }
+}                                        export {show}
+
+export var a = 10
+
+********multiple export**********
+
+class Nokia{           
+    properties                                   
+    Methods                        
+}                              
+function show () {              
+                                             
+}   
+
+export {Nokia, show}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
